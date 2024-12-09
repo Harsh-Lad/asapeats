@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASAP EATS - Indian Cuisine with an Aussie Twist</title>
+    <meta name="description" content="Experience the fusion of Indian and Australian flavors with our restaurant, catering, and meal service options.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+</head>
+<body class="flex flex-col min-h-screen bg-background text-foreground">
+    <header id="header" class="fixed w-full z-50 transition-colors duration-300 bg-white"></header>
+
+    <main class="flex-grow">
+        <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0">
+                <img src="./media/asaphero.jpg" alt="ASAP EATS Hero" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-10 text-center text-white">
+                <h1 class="text-6xl md:text-8xl font-bold mb-4">ASAP EATS</h1>
+                <p class="text-2xl md:text-3xl mb-8">Aussie-Indian fusion with a dash of spice</p>
+                <!-- <button class="btn btn-secondary text-xl">Explore Menu</button> -->
+            </div>
+        </section>
+
+        <section id="about" class=" bg-black text-white">
+            <div class="container ">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0 flex flex-row justify-start">
+                        <img src="./media/journey.png" alt="About ASAP EATS" class=" w-full">
+                    </div>
+                    <div class="md:w-1/2 md:pl-12">
+                        <h2 class="section-heading text-left mb-6 text-shadow">Our Culinary Journey</h2>
+                        <p class="text-lg mb-6">
+                            At ASAP EATS, we serve traditional Indian flavours with a global twist. Every dish is crafted with love, gratitude, and a deep passion for food. We pour our hearts into every bite, creating flavors that tell a story — a beautiful blend of tradition and global inspiration.
+                        </p>
+                        <p class="text-lg mb-6">
+                            It's not just a meal, it's an experience meant to nourish both the body and soul. We invite you to join us in North Sydney, where warmth and creativity come together on every plate, and where you're not just a guest, but a part of our family.
+                        </p>
+                        <button class="btn btn-secondary text-xl">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="py-20 bg-background">
+            <div class="container mx-auto px-4">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 relative h-80 md:h-[500px]">
+                            <img src="./media/paneerTaco.jpg" 
+                                 alt="Restaurant Menu" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="md:w-1/2 p-8 md:p-12">
+                            <h2 class="text-4xl font-bold text-[#FF8A3D] mb-4">Restaurant Menu</h2>
+                            <p class="text-lg text-gray-700 mb-6">
+                                Indulge in our diverse range of authentic Indian dishes with an Aussie twist. 
+                                From classic curries to innovative fusion creations, there's something for every palate.
+                            </p>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-background">
+            <div class="container mx-auto px-4">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="flex flex-col md:flex-row-reverse items-center">
+                        <div class="md:w-1/2 relative h-80 md:h-[500px]">
+                            <img src="./media/manchurian.jpg" 
+                                 alt="Catering Services" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="md:w-1/2 p-8 md:p-12">
+                            <h2 class="text-4xl font-bold text-[#FF8A3D] mb-4">Catering Services</h2>
+                            <p class="text-lg text-gray-700 mb-6">
+                                Make your event unforgettable with our bespoke catering options. We offer a wide range 
+                                of dishes perfect for any occasion, from intimate gatherings to large celebrations.
+                            </p>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="py-20 bg-background">
+            <div class="container mx-auto px-4">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 relative h-80 md:h-[500px]">
+                            <img src="./media/noodle.jpg" 
+                                 alt="Restaurant Menu" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="md:w-1/2 p-8 md:p-12">
+                            <h2 class="text-4xl font-bold text-[#FF8A3D] mb-4">Meal Serivce</h2>
+                            <p class="text-lg text-gray-700 mb-6">
+                                Enjoy our convenient meal service for your weekly Indian cuisine fix. Fresh, delicious, and delivered right to your doorstep - perfect for busy professionals and food enthusiasts alike.
+                            </p>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+       
+    </main>
+
+    <footer id="footer" class="bg-slate-900 text-gray-900 py-16"></footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/catering.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/parallax.js"></script>
+</body>
+</html>
+

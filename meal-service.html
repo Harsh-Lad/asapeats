@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Service - ASAP EATS</title>
+    <meta name="description" content="Explore our convenient meal service options for your weekly Indian cuisine fix.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="styles/meal-service.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+</head>
+<body class="flex flex-col min-h-screen bg-background  text-gray-900">
+    <header id="header" class="fixed w-full z-50 transition-colors duration-300 bg-white"></header>
+
+    <main class="flex-grow pt-24 pb-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4">
+                    <span class="text-primary">Homestyle</span> <span class="text-[#C8A23F]">Meals</span>
+                </h1>
+                <h2 class="text-4xl md:text-5xl font-bold text-[#C8A23F] mb-8">Delivered Fresh!</h2>
+                <div class="flex items-center justify-center gap-4 mb-8">
+                    <img src="https://cdn-icons-png.freepik.com/256/2496/2496112.png?semt=ais_hybrid" alt="WhatsApp" class="w-12 h-12 rounded-full">
+                    <div class="text-left">
+                        <p class="text-2xl font-bold text-[#1B4B43]">0489 045 006</p>
+                        <p class="text-lg text-gray-600">Min order $35</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="meal-packages" class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Meal packages will be dynamically inserted here -->
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-16">
+                <p class="text-xl text-center text-gray-700 mb-8">
+                    Choose your curry from the list below. All meals include raita, salad & a healthy treat.
+                </p>
+                <div id="weekly-menu" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Weekly menu will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer id="footer" class="bg-slate-900 text-gray-900 py-16"></footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/meal-service.js"></script>
+</body>
+</html>
+

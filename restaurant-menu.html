@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu - ASAP EATS</title>
+    <meta name="description" content="Explore our diverse restaurant menu featuring traditional Indian cuisine and exciting fusion dishes.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+</head>
+<body class="flex flex-col min-h-screen bg-background text-foreground">
+    <header id="header" class="fixed w-full z-50 transition-colors duration-300 bg-white"></header>
+
+    <main class="flex-grow pt-24 pb-16 bg-background">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-center text-primary mb-8">Restaurant Menu</h1>
+            <p class="text-xl text-center text-muted-foreground mb-12">
+                Discover our exquisite blend of traditional Indian flavors and innovative fusion cuisine
+            </p>
+            <div id="menu-items" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Menu items will be dynamically inserted here -->
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer" class="bg-slate-900 text-gray-900 py-16"></footer>
+
+
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/restaurant-menu.js"></script>
+</body>
+</html>
+

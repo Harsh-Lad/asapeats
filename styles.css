@@ -1,0 +1,166 @@
+:root {
+    --background: 48 77% 96%; /* #FAE6B1 */
+    --foreground: 197 41% 28%; /* #31525B */
+    --card: 0 0% 100%;
+    --card-foreground: 197 41% 28%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 197 41% 28%;
+    --primary: 35 100% 50%; /* #FFA101 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 197 41% 28%; /* #31525B */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 190 47% 80%; /* #B3DEE5 */
+    --muted-foreground: 197 41% 28%;
+    --accent: 35 100% 50%; /* #FFA101 */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 48 77% 96%;
+    --border: 190 47% 80%;
+    --input: 190 47% 80%;
+    --ring: 35 100% 50%;
+    --radius: 0.5rem;
+}
+
+.bg-background { background-color: hsl(var(--background)); }
+.text-foreground { color: hsl(var(--foreground)); }
+.bg-primary { background-color: hsl(var(--primary)); }
+.text-primary { color: hsl(var(--primary)); }
+.bg-secondary { background-color: hsl(var(--secondary)); }
+.text-secondary { color: hsl(var(--secondary)); }
+
+.gradient-bg {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+}
+
+.btn {
+    @apply font-bold py-2 px-4 rounded transition duration-300;
+}
+
+.btn-primary {
+    @apply bg-primary text-white hover:bg-opacity-90;
+}
+
+.btn-secondary {
+    @apply bg-secondary text-white hover:bg-opacity-90;
+}
+
+.section-heading {
+    @apply text-4xl md:text-5xl font-bold text-center;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.parallax-section {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.menu-card {
+    @apply bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105;
+}
+
+.menu-card-inner {
+    @apply relative w-full h-full;
+}
+
+.menu-card-front, .menu-card-back {
+    @apply absolute w-full h-full backface-hidden transition-transform duration-500;
+}
+
+.menu-card-back {
+    @apply transform rotate-y-180 bg-primary p-6;
+}
+
+.menu-card:hover .menu-card-front {
+    @apply transform rotate-y-180;
+}
+
+.menu-card:hover .menu-card-back {
+    @apply transform rotate-y-0;
+}
+
+.menu-image {
+    @apply w-full h-48 object-cover;
+}
+
+.menu-title {
+    @apply text-xl font-bold;
+}
+
+.menu-price {
+    @apply text-lg font-semibold;
+}
+
+.menu-description {
+    @apply text-sm;
+}
+/* Add these styles to your existing styles.css file */
+
+.menu-item-overlay {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.9) 100%);
+    /*transition: opacity 0.3s ease-in-out;*/
+}
+
+/*.menu-item-overlay:hover {
+    opacity: 1;
+}*/
+
+.menu-item-image {
+    transition: transform 0.3s ease-in-out;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-item-container:hover .menu-item-image {
+    transform: scale(1.1);
+}
+
+/* Ensure text is readable on all background colors */
+.menu-item-overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.menu-item-overlay p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Add some depth to the cards */
+.menu-item-container {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    aspect-ratio: 4 / 3;
+}
+
+.menu-item-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Improve accessibility for keyboard navigation */
+.menu-item-container:focus-within .menu-item-overlay {
+    opacity: 1;
+}
+
+.menu-item-container:focus-within {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
